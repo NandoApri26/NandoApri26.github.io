@@ -1,0 +1,262 @@
+#background-loading {
+  background: #07131e;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.loading-text {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -5px 0 0 -32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  border: 4px solid transparent;
+  border-top-color: #ffa500;
+  border-bottom-color: #ffa500;
+  border-radius: 50%;
+  animation: loading 2s linear;
+  animation-iteration-count: infinite;
+}
+
+.loader::after,
+.loader::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.loader::after {
+  left: 15px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px solid transparent;
+  border-top-color: #32cd32;
+  border-bottom-color: #32cd32;
+  animation: loading 1.5s linear;
+  animation-iteration-count: infinite;
+}
+
+.loader::before {
+  left: 6px;
+  top: 6px;
+  right: 6px;
+  bottom: 6px;
+  border: 3px solid transparent;
+  border-top-color: #03afdb;
+  border-bottom-color: #03afdb;
+  animation: loading 3s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Akhir Loader */
+
+#header .navbar,
+#Footer .bg-Footer {
+  background-color: #316b83;
+  box-shadow: 0px 5px 7px grey;
+}
+#header .navbar h3 {
+  font-family: Sacramento;
+  font-weight: bolder;
+  text-shadow: 2px 6px 2px black;
+}
+#header .navbar span {
+  font-family: concert one;
+  text-shadow: 2px 6px 2px black;
+  letter-spacing: 3px;
+}
+#header .navbar-nav a {
+  font-family: concert one;
+}
+#header .navbar-nav a:hover {
+  color: #1fb6d7;
+  font-family: concert one;
+}
+/* Akhir Header */
+
+/* Awal Jumbotron */
+#Jumbotron h1 {
+  margin-top: 20px;
+  color: #316b83;
+  font-family: concert one;
+  text-shadow: 2px 1px 1px black;
+}
+#Jumbotron .jumbotron {
+  margin-top: 70px;
+  padding-top: 2rem;
+  background-color: #e2edff;
+}
+/* Akhir Jumbotron */
+
+/* Awal About */
+#about .about h3,
+#about .judul h3 {
+  color: #939393;
+  margin-top: -10px;
+  font-family: concert one;
+}
+#about .about h5,
+#about .isi h5,
+#about .isii h5 {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 18px;
+}
+#about .about h2,
+#CV .judul h2,
+#portofollio .judul h2,
+#Keahlian .judul h2,
+#Contact .judul h2 {
+  font-family: poppins;
+  color: #939393;
+}
+#about .isi span {
+  font-weight: bolder;
+}
+/* Akhir About */
+
+/* Awal CV */
+#CV .bg-cv,
+#Keahlian .bg-keahlian {
+  background-color: #e2edff;
+  margin-top: 100px;
+}
+#CV .isi span {
+  font-size: 20px;
+  font-family: poppins;
+  font-weight: bold;
+  color: #316b83;
+}
+#CV .isi p,
+#Jumbotron p {
+  font-size: 22px;
+  font-family: neuton;
+  font-style: italic;
+}
+#CV .isi ul {
+  margin-left: -15px;
+  font-family: neuton;
+  font-size: 18px;
+}
+/* Akhir CV */
+
+/* Awal Portofollio */
+#portofollio .picture img {
+  /* margin-top: 150px; */
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+}
+#portofollio .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-bottom: -3rem;
+  list-style: none;
+}
+#portofollio .carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #2f57a4;
+  background-clip: padding-box;
+  border-radius: 100%;
+  border-color: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+/* Akhir Portofollio */
+
+/* Awal Keahlian */
+#Keahlian .icon-keahlian ul {
+  list-style: none;
+}
+#Keahlian .icon-keahlian li {
+  display: inline;
+}
+/* Akhir Keahlian */
+
+/* Awal COntact */
+#Contact .btn {
+  border-radius: 50px;
+  background-color: #316b83;
+  box-shadow: 2px 2px 10px grey;
+  font-family: concert one;
+}
+#Contact .btn:hover {
+  border-radius: 50px;
+  background-color: #1fb6d7;
+  color: #316b83;
+  box-shadow: 2px 2px 10px grey;
+  font-family: concert one;
+}
+/* Akhir COntact */
+
+/* Awal Footer */
+#Footer .bg-footer {
+  background-color: #316b83;
+  margin-top: 50px;
+}
+#Footer .sosmed img {
+  width: 35px;
+  margin-left: 10px;
+}
+#Footer .sosmed img:hover {
+  opacity: 60%;
+}
+#Footer hr {
+  border: 1px solid;
+  border-color: white;
+  margin-top: 15px;
+}
+#Footer .copyright {
+  font-size: 18px;
+  font-family: neuton;
+  color: white;
+}
+#Footer .copyright span {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: concert one;
+}
+/* Akhir Footer */
